@@ -1,0 +1,93 @@
+
+
+/*
+    1- common styles
+    2- general styles
+    3- sections
+        3.0 header
+        3.1 home
+*/
+
+
+
+/*
+    common
+
+    - container
+    - opacity hover
+    - section header
+    - section padding
+    - hover effect 1 from left to right
+    - hover effect 2 from up to down
+
+*/
+
+
+
+
+/* general styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+
+
+/* sections */
+
+
+
+/* header styles */
+
+.header{
+    background-color: crimson;
+
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/*
+    to solve overflow problem that is caused by floating childs
+*/
+.avoidOverflow{
+    overflow: hidden;
+}
+
+.header .logo{
+    float:left;
+    width: 40%;
+}
+
+.header .logo img{
+    width: 30%;
+}
+
+.header .nav{
+    float:left;
+    width: 60%;
+    list-style: none;
+    padding-left: 50px;
+}
+
+.header .nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.header .nav  a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding-top: 10px;
+    padding: 30x;
+}
+
