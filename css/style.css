@@ -13,6 +13,7 @@
 /*
     common
 
+    -overlay
     - container
     - opacity hover
     - section header
@@ -24,8 +25,24 @@
 
 
 
+/* common styles */
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+
+
+
 
 /* general styles */
+h1, h2, h3, h4, h5 {
+    font-family: montserrat, sans-serif;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -37,6 +54,18 @@ body{
 }
 
 
+button{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.hover-opacity{
+    transition: opacity .5s;
+}
+
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+
 
 
 /* sections */
@@ -46,8 +75,9 @@ body{
 /* header styles */
 
 .header{
-    background-color: crimson;
-
+    position: fixed;
+    width: 100%;
+    z-index: 1  ;
 }
 
 .container{
@@ -68,14 +98,17 @@ body{
 }
 
 .header .logo img{
-    width: 30%;
-}
+    width: 25%;
+    padding-top: 8px;
+ }
 
 .header .nav{
     float:left;
     width: 60%;
     list-style: none;
     padding-left: 50px;
+    text-align: right ;
+
 }
 
 .header .nav li {
@@ -87,7 +120,59 @@ body{
     text-decoration: none;
     color: white;
     display: block;
-    padding-top: 10px;
+    padding-top: 15px;
     padding: 30x;
 }
 
+
+/* home section */
+
+.home{
+    height: 100vh;
+    background-image: url(../images/background/background1.webp);
+    background-size: cover;
+    position: relative;
+}
+
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 70%;
+}
+.home-content .title{
+    text-transform: uppercase;
+    margin: 15px;
+    font-size: 3rem;
+    color: white;
+}
+
+.home-content .title-discription{
+    text-transform: uppercase;
+    margin: 10px;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    
+}
+.btn{
+    width: 150px;
+    padding: 15px;
+    border-radius: 7px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.firBtn{
+    background-color: white;
+    margin-right: 10px;
+}
+
+.secBtn{
+    background-color: #619ff6 ;
+    color: white;
+}
